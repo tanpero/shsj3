@@ -1,0 +1,71 @@
+@import url(style.css);
+
+/* 博客页面样式 */
+#blog-list {
+    background-color: #fff;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.blog-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.blog-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.categories, .hot-articles, .team-members {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.categories li, .hot-articles li, .team-members li {
+    margin-bottom: 10px;
+}
+
+.categories li a, .hot-articles li a, .team-members li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.categories li a:hover, .hot-articles li a:hover, .team-members li a:hover {
+    color: #007bff;
+}
+
+/* 博客详情模态框样式 */
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
